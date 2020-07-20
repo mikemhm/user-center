@@ -22,4 +22,9 @@ public class UserController {
         log.info("我被请求了");
         return this.userService.findById(id);
     }
+
+    @GetMapping("/a")
+    public User getUser(User user){
+        return user;
+    }
 }
