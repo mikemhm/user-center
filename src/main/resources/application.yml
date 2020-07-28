@@ -29,3 +29,9 @@ spring:
   application:
     # nacos 服务名称，尽量用-，不要用_
     name: user-center
+
+jwt:
+  #秘钥
+  secret: adfjkdfaj
+  # 有效期，单位秒，默认2周
+  expire-time-in-second: 1209600
