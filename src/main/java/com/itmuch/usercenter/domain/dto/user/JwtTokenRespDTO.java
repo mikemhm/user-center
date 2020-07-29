@@ -1,4 +1,4 @@
-package com.itmuch.usercenter.domain.entity.user.dto.user;
+package com.itmuch.usercenter.domain.dto.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class LoginRespDTO {
-    private JwtTokenRespDTO token;
-    private UserRespDTO user;
+public class JwtTokenRespDTO {
+    private String token;
+    /** 过期时间 */
+    private Long expirationTime;
 }

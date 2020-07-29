@@ -2,7 +2,7 @@ package com.itmuch.usercenter.service.user;
 
 import com.itmuch.usercenter.dao.user.UserMapper;
 import com.itmuch.usercenter.domain.entity.user.User;
-import com.itmuch.usercenter.domain.entity.user.dto.user.UserLoginDTO;
+import com.itmuch.usercenter.domain.dto.user.UserLoginDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

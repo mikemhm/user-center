@@ -1,4 +1,4 @@
-package com.itmuch.usercenter.domain.entity.user.dto.user;
+package com.itmuch.usercenter.domain.dto.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,16 +9,15 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserRespDTO {
-    private String id;
+public class UserLoginDTO {
     /**
-     * 头像
+     * 微信code
+     */
+    private String code;
+    /**
+     * 头像地址
      */
     private String avatarUrl;
-    /**
-     * 积分
-     */
-    private String bonus;
     /**
      * 微信昵称
      */
