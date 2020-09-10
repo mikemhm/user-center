@@ -35,7 +35,9 @@ spring:
           destination: stream-test-topic
           # 随便写，一定要设置
           group: bind
-
+        my_input:
+          destination: stream-my-topic
+          group: myGroup
   application:
     # nacos 服务名称，尽量用-，不要用_
     name: user-center
@@ -46,5 +48,10 @@ jwt:
   # 有效期，单位秒，默认2周
   expire-time-in-second: 1209600
 
-#rocketmq:
-#  name-server: 192.168.205.128:9876
+rocketmq:
+  name-server: 192.168.205.128:9876
+
+# 设置nacos日志级别
+logging:
+  level:
+    com.alibaba.nacos: error
