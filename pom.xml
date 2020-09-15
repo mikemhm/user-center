@@ -41,6 +41,12 @@
             <version>1.18.8</version>
         </dependency>
 
+        <!--通过actuator 端点查看 是否受到 sentinel 保护-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
         <!--nacos配置-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
